@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Завдання</title>
+    <style>
+        /* Завдання 1 */
+        .text-box h3:first-of-type { color: pink; }
+        #greycol { color: grey; }
+        .text-box div p { color: red; }
+        .text-box p:nth-of-type(3) { color: green; }
+        .yellow { color: yellow; }
+        
+        /* Завдання 2 */
+        .schedule {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .day {
+            list-style: none;
+            padding: 10px;
+            border: 1px solid black;
+            border-radius: 5px;
+            width: 150px;
+            text-align: center;
+        }
+        .monday { background-color: lightblue; }
+        .tuesday { background-color: lightgreen; }
+        .wednesday { background-color: lightcoral; }
+        .thursday { background-color: lightgoldenrodyellow; }
+        .friday { background-color: lightgray; }
+        
+        /* Псевдокласи */
+        .day li:hover { background-color: darkgray; }
+        .day li:first-child { font-weight: bold; }
+        .day li:last-child { font-style: italic; }
+        .day li:nth-child(even) { text-decoration: underline; }
+        .day li:nth-child(odd) { font-size: 1.2em; }
+        .day li:active { background-color: darkblue; color: white; }
+        .day li:focus { outline: 2px solid red; }
+    </style>
+</head>
+<body>
+    <div class="text-box">
+        <h3>Пофарбуйте мене в рожевий колір (color:pink).</h3>
+        <p>Даний елемент має залишитись неоформленим.</p>
+        <p id="greycol">Пофарбуйте мене в сірий колір (color:grey).</p>
+        <div>Даний елемент має залишитись неоформленим.</div>
+        <div><p>Пофарбуйте мене в червоний колір (color:red).</p></div>
+        <h3>Даний елемент має залишитись неоформленим.</h3>
+        <p>Пофарбуйте мене в зелений колір (color:green).</p>
+        <p class="yellow">Пофарбуйте мене в жовтий колір (color:yellow).</p>
+    </div>
+    
+    <div class="schedule">
+        <ul class="day monday">
+            <li>Понеділок</li>
+            <li>Математика</li>
+            <li>Історія</li>
+            <li>Біологія</li>
+        </ul>
+        <ul class="day tuesday">
+            <li>Вівторок</li>
+            <li>Фізика</li>
+            <li>Географія</li>
+            <li>Література</li>
+        </ul>
+        <ul class="day wednesday">
+            <li>Середа</li>
+            <li>Англійська</li>
+            <li>Хімія</li>
+            <li>Фізкультура</li>
+        </ul>
+        <ul class="day thursday">
+            <li>Четвер</li>
+            <li>Інформатика</li>
+            <li>Трудове навчання</li>
+            <li>Музика</li>
+        </ul>
+        <ul class="day friday">
+            <li>П'ятниця</li>
+            <li>Математика</li>
+            <li>Фізика</li>
+            <li>Мистецтво</li>
+        </ul>
+    </div>
+</body>
+</html>
